@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Store</h1>
+       <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="login-message"></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="categories">
+            <li><a href="#" data-category="all">All</a></li>
+            <li><a href="#" data-category="electronics">Electronics</a></li>
+            <li><a href="#" data-category="clothing">Clothing</a></li>
+            <li><a href="#" data-category="accessories">Accessories</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>GET STARTED</h2>
+            <p>YOUR FAVORITE SHOPPING</p>
+            <a href="#" class="btn">BUY NOW</a>
+        </div>
+        <img src="images/accessories.jpg" alt="Fashion Image" class="hero-image">
+    </section>
+
+   
+    <section class="coming-soon">
+        <img src="images/Coming Soon Website.png" alt="Coming Soon" class="coming-soon-image">
+    </section>
+ 
+
+        <section class="filters">
+            <div class="filter-group"></div>
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="1000" value="1000">
+            <span id="price-value">$1000</span>
+        </div>
+
+        <div class="filter-group">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="brand-filter">Brand:</label>
+            <select id="brand-filter">
+                <option value="all">All</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+            </select>
+        </div>
+ 
+        </section>
+
+        <section class="product-grid">
+     
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
